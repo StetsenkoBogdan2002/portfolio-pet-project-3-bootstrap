@@ -1,0 +1,17 @@
+@mixin buttonStyles {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, left bottom, left top, from($btn-color), to($btn-color));
+    background: -o-linear-gradient(bottom, $btn-color 0%, $btn-color 100%);
+    background: linear-gradient(0deg, $btn-color 0%, $btn-color 100%);
+    -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+        background: -webkit-gradient(linear, left bottom, left top, from(#1ec786), to(#1ec786));
+        background: -o-linear-gradient(bottom, #1ec786 0%, #1ec786 100%);
+        background: linear-gradient(0deg, #1ec786 0%, #1ec786 100%);
+    }
+}
